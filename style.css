@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+#navbar-pinterest {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 10;
+}
+
+.logo i {
+    position: relative;
+    display: flex;
+    font-size: 28px;
+    right: 5px;
+}
+
+.links {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    right: 10px;
+}
+
+.links a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.finder {
+    width: 70%;
+    height: 55px;
+    background: #e4e4e4;
+    border-radius: 80px;
+    padding: 0 20px;
+}
+
+.finder i {
+    color: #555;
+}
+
+.finder input {
+    border: none;
+    background: transparent;
+    width: 80%;
+    height: 100%;
+    outline: none;
+    padding: 0 10px;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.icons {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    left: 10px;
+}
+
+.icons i {
+    font-size: 26px;
+    color: #767676;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+#content {
+    width: 1700px;
+    margin: 20px auto;
+    columns: 6;
+    column-gap: 20px;
+}
+
+#content .card-image {
+    width: 100%;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+#content .card-image img {
+    max-width: 100%;
+    border-radius: 15px;
+    cursor: zoom-in;
+}
+
+.save a {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.container {
+    width: fit-content;
+    display: flex;
+    position: relative;
+}
+
+.buttons {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: calc(100% - 15px);
+    border-radius: 15px;
+}
+
+.buttons .save a {
+    display: inline;
+    position: absolute;
+    right: 0;
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    padding: 1;
+    border-radius: 15px;
+}
+
+
+.buttons .hover-icons i {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+     !important margin: 80;
+    border-radius: 5px;
+}
+
+.buttons .hover-icons1 i {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    background-color: white;
+     !important margin: 80;
+    border-radius: 5px;
+}
+
+.card-image {
+    position: relative;
+}
+
+.buttons:hover {
+    opacity: 1 !important;
+    background-color: rgba(0, 0, 0, .15);
+}
+
+.buttons .hover-icons i #arrow-up {
+    left: 400px;
+}
+
+@media (max-width: 1200px) {
+    #content {
+        width: calc(100% - 40px);
+        columns: 4;
+    }
+}
+
+@media (max-width: 768px) {
+    #content {
+        columns: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    #content {
+        columns: 1;
+    }
+}
